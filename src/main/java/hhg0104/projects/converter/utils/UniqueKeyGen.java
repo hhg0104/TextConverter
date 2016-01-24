@@ -20,10 +20,6 @@ import java.util.UUID;
  */
 public class UniqueKeyGen {
 
-	private UniqueKeyGen(){
-		// Declare by constructor not allowed
-	}
-	
 	/**
 	 * Generate unique key string
 	 * 
@@ -40,5 +36,9 @@ public class UniqueKeyGen {
 		String timeMillStr = String.valueOf(currentTimeMill);
 
 		return uuidStr + StringConstants.UNDER_LINE + timeMillStr;
+	}
+
+	private UniqueKeyGen() {
+		// Declare by constructor not allowed
 	}
 }
