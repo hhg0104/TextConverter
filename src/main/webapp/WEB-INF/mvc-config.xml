@@ -11,6 +11,8 @@
 
 	<mvc:annotation-driven />
 
+	<mvc:resources mapping="/resource/**" location="/resource/" />
+
 	<!-- Controller scan -->
 	<context:component-scan base-package="hhg0104.projects.converter"
 		use-default-filters="false">
@@ -20,7 +22,6 @@
 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<!-- Example: a logical view name of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
 		<property name="prefix" value="/WEB-INF/view/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
